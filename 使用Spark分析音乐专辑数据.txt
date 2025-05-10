@@ -1,0 +1,30 @@
+使用Spark分析音乐专辑数据:以下，我们只针对albums.csv文件进行分析。该数据具体包括以下字段：
+id: the album identifier;
+专辑标识符
+artist_id: the artist identifier;
+艺术家标识符
+album_title: the title of the album;
+专辑名称
+genre: the genre of the album. An artist can release albums of different genres;
+专辑的流派。艺术家可以发行不同类型的专辑
+year_of_pub: the year the album was published;
+专辑发行的年份
+num_of_tracks: how many tracks there are in the album (a small number can mean longer tracks);
+专辑中有多少首曲目（少量可能意味着更长的曲目）
+num_of_sales: how many sales the album has made in the first month after the release;
+专辑在发行后的第一个月取得了多少销量
+rolling_stone_critic: how magazine Rolling Stone has rated the album;
+《滚石》杂志对这张专辑的评价
+mtv_critic: how MTV has rated the album;
+MTV如何评价这张专辑;
+music_maniac_critic: how review site Music Maniac has rated the album.
+评论网站 Music Maniac 如何评价这张专辑
+
+0. 数据预处理
+1. 统计各类型专辑的数量
+2. 统计各类型专辑的销量总数
+3. 统计近20年每年发行的专辑数量和单曲数量
+4. 分析总销量前五的专辑类型的各年份销量
+5. 分析总销量前五的专辑类型，在不同评分体系中的平均评分
+
+=> ["genre_count", "genre_sales", "top5_ratings", "top5_yearly_sales", "yearly_stats"]
